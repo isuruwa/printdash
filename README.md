@@ -14,6 +14,22 @@ A self-hosted office printer management dashboard with SNMP-based toner/status m
 
 - Node.js 18+
 - Network access (SNMP, UDP 161) to your printers
+- **CUPS** installed and running on the host — PrintDash shells out to CUPS command-line tools (`lpstat`, `lp`, `cancel`, `lpadmin`, `lpinfo`, `cupsenable`, `cupsdisable`) for print queue management, job control, and IPP-based printer discovery
+- **SANE** (`scanimage`) installed on the host if you want scanner support
+- Appropriate printer drivers for your hardware (e.g. Canon, HP) installed via CUPS
+
+On Debian/Ubuntu, the system dependencies can be installed with:
+
+```bash
+sudo apt update
+sudo apt install -y cups cups-client sane-utils printer-driver-all
+```
+
+The user running the Node.js process needs permission to run CUPS admin commands (typically by being a member of the `lpadmin` group):
+
+```bash
+sudo usermod -aG lpadmin $USER
+```
 
 ## Installation
 

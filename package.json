@@ -1,0 +1,14 @@
+{
+  "name": "printdash",
+  "version": "4.0.0",
+  "description": "Full Printer Management Dashboard with Telegram Alerts",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "net-snmp": "^3.11.1"
+  }
+}

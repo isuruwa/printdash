@@ -1,0 +1,16 @@
+{
+  "telegram": {
+    "enabled": false,
+    "botToken": "",
+    "chatId": "",
+    "alertToner": true,
+    "tonerThreshold": 20,
+    "alertOffline": true,
+    "alertJams": true,
+    "alertTrayEmpty": true,
+    "cooldownMinutes": 240
+  },
+  "network": {
+    "scanSubnet": "192.168.1.0/24"
+  }
+}

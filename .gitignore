@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log
+
+users.json
+printers.json
+settings.json
+
+*.tmp
+.env
